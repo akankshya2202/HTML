@@ -1,0 +1,55 @@
+*
+{
+    box-sizing: border-box;
+}
+body{
+    background:radial-gradient(red, maroon);
+}
+/* pseudo elements and pseudo classes*/
+/* hover*/
+a:link
+{
+   background-color: red;
+}
+a:active{
+    background-color: black;
+    color: white;
+}
+a:visited
+{
+    color: yellow;
+}
+input:hover{
+    background-color: blue;
+}
+input:focus
+{
+    background-color: black;
+}
+input:enabled{
+    background-color:chartreuse;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    border: 1px solid red;
+}
+.box:nth-child(1),
+.box:nth-child(5)
+{background-color: red;
+}
+.box:empty{
+    background-color:aqua;
+}
+/* pseudo classes */
+p::first-letter{
+    font-size: 50px;
+}
+p::first-line
+{
+    background-color:blue;
+}
+p::before{
+    content:"Akankshya"
+}
